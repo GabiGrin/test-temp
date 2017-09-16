@@ -1,8 +1,14 @@
 
 const s = require('shelljs');
 console.log('RUNNING')
-console.log(22, process.env.GIT_PARAMS);
+const params =  process.env.GIT_PARAMS.split(' ');
 
-const files = s.exec('git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD').stdout.split('\n');
+const ohead = params[0];
+const nhead = params[1];
 
-console.log(files);
+if (ohead && nhead) {
+    console.log({ohead, nhead});
+    const files = s.exec(`git diff-tree -r --name-only --no-commit-id ${ohead} ${nhead}`).stdout.split('\n');
+} else {
+    console.log('no ohead head');
+}
