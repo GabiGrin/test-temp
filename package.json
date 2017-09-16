@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "shelljs": "^0.7.8"
   },
   "name": "somerepo",
   "version": "1.0.0",
