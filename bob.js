@@ -7,8 +7,8 @@ const ohead = params[0];
 const nhead = params[1];
 
 if (ohead && nhead) {
-    console.log({ohead, nhead});
-    const files = s.exec(`git diff-tree -r --name-only --no-commit-id ${ohead} ${nhead}`).stdout.split('\n');
+	const files = s.exec(`git diff-tree -r --name-only --no-commit-id ${ohead} ${nhead}`).stdout.split('\n').map((f) => `--files-changed ${f}`);
+	s.exec('merlin build-changed --cwd root ' + files.join(' '));
 } else {
     console.log('no ohead head');
 }

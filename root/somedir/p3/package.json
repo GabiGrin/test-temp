@@ -1,0 +1,12 @@
+{
+    "name": "p3",
+    "version": "1.0.0",
+    "dependencies": {
+        "chalk": "1.0.0"
+    },
+    "scripts": {
+      "test": "echo \"testing p3\" && exit 1",
+      "build": "echo \"building p3\""
+    }
+  }
+  

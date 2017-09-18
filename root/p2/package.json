@@ -1,0 +1,12 @@
+{
+    "name": "p2",
+    "version": "1.0.0",
+    "dependencies": {
+        "p3": "1.0.0"
+    },
+    "scripts": {
+      "test": "echo \"testing p2\" && exit 1",
+      "build": "echo \"building p2\""
+    }
+  }
+  
