@@ -6,7 +6,7 @@
     },
     "scripts": {
       "test": "echo \"testing p2\" && exit 1",
-      "build": "echo \"building p2\""
+      "build": "echo \"building p2 \""
     }
   }
   
