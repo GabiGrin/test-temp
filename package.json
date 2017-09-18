@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postcommit": "node bob.js",
     "postmerge": "node bob.js",
-    "postrewrite": "node bob.js",
-    "postcheckout": "node bob.js"
+    "postrewrite": "merlin build-changed-git",
+    "postcheckout": "merlin build-changed-git"
   },
   "author": "",
   "license": "ISC",
